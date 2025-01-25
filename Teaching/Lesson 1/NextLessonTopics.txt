@@ -1,0 +1,51 @@
+Control Flow:
+
+If Statements: Conditional statements to execute code based on certain conditions.
+
+Else and Elif Statements: Providing alternative conditions.
+
+Nested If Statements: Using if statements within if statements.
+
+Loops:
+
+For Loops: Iterating over a sequence (like a list or a range).
+
+While Loops: Executing code as long as a condition is true.
+
+Nested Loops: Using loops within loops.
+
+Break and Continue: Controlling loop execution.
+
+Functions:
+
+Defining Functions: Creating reusable blocks of code.
+
+Parameters and Arguments: Passing data to functions.
+
+Return Statement: Returning values from functions.
+
+Default Parameters: Providing default values for function parameters.
+
+Variable Scope: Understanding local and global variables.
+
+File Handling:
+
+Reading Files: Opening and reading content from files.
+
+Writing Files: Creating and writing content to files.
+
+Appending to Files: Adding content to existing files.
+
+File Modes: Understanding different modes (read, write, append).
+
+Error Handling:
+
+Try and Except: Handling exceptions and errors gracefully.
+
+Finally: Code that runs regardless of whether an exception occurs.
+
+Modules and Packages:
+
+Importing Modules: Using built-in and third-party libraries.
+
+Creating and Using Custom Modules: Organizing code into reusable modules.
