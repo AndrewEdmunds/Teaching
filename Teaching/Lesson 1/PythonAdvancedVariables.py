@@ -7,7 +7,7 @@
 #While a variable such as an integer can only ever contain one element, for example "x = 1" can
 #only ever contain the value of 1, a list can contain multiple values. An example of this is as follows:
 
-FirstList = [1, "pineapple", 22, 34, "Fork"]
+FirstList = [1,"pineapple",22,34,"Fork"]
 
 #If you would like to see the entire list you can use the following line of code:
 
@@ -113,7 +113,7 @@ people.pop("Brady")
 
 #print(people)
 
-#as seen above, the pop functions exactly as it does on dictionaries, except you need to specify which
+#as seen above, the pop functions exactly as it does on dictionaries as it does on lists, except you need to specify which
 #entry you want to delete.
 
 #adding a new key and value
