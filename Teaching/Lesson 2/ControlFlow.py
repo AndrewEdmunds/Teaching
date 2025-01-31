@@ -1,19 +1,21 @@
-# Welcome to lesson 2 of our python journey!
+# Now that you understand many of the basics of python, it is time to move to some slightly more advanced topics.
 
-# We'll start with control flow. It helps us decide which part of the code to execute based on certain conditions.
+# We'll start with control flow. The control flow helps us decide which part of the code to execute based on certain conditions.
 
 # If Statements
 # If statements execute code when a condition is true.
-x=0
+
+
+x=10
 
 if x > 5:
     print("x is greater than 5")
 
-#So with this question above, what do you think would happen if you give the function a value greater than 5?
+#So with this block of code above, what do you think would happen if you ran it?
 
 #Furthermore, what do you think would happen if you gave a value of less than 5?
 
-# Now, you try! Write your own if statement where the console will print something if x is less than 10:
+# Now, you try! Write your own if statement where the console will print something if x is less than 5:
 
 
 
@@ -69,6 +71,7 @@ if x > 5:
 
 # Let's think about this block of code:
 # What happens if x is greater than 5?
+# What about if x is less than 5?
 
 # Now, what if x is less than 15 but still greater than 5?
 
@@ -76,6 +79,7 @@ if x > 5:
 
 # How can we modify this code to check if x is greater than 5 and also an even number?
 # Think about adding another nested if statement to check if x % 2 == 0 (this checks if x is even).
+
 
 
 
@@ -90,7 +94,7 @@ if x > 5:
 
 
 
-# What are the advantages of using nested if statements in this scenario?
+
 
 # Let's also consider what will happen if x is set to 5.
 
