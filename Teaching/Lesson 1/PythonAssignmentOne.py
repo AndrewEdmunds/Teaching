@@ -20,10 +20,16 @@ w = 8
 
 
 
-# Question three: Please now use the variables you created to solve a math problem. (the math operators in python are
+# Question three: Please create two variable and solve a math problem with them. (the math operators in python are
 # addition: "+", subtraction: "-", multiplication: "*", and division: "/")
 
+<<<<<<< Updated upstream
 #print (x-6+w) 
+=======
+x = 10 
+print( 5 + x )
+
+>>>>>>> Stashed changes
 
 
 
