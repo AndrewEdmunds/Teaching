@@ -15,8 +15,8 @@
 # Try it yourself!
 # Ask the user for their favorite "thing" is and print a message that includes their input:
 
-#favourite_thing = input ("favourite food:")
-#print(f"your favorite food is {favourite_thing}! ")
+favourite_thing = input ("favourite food:")
+print(f"your favorite food is {favourite_thing}! ")
 
 
 
@@ -33,20 +33,20 @@
 # Ask the user for their height in centimeters and convert it to meters (you convert from centimeters to
 # meters by dividing by 100) and then print the result:
 
-#Height = input("enter your height in cm ")
-#Height = int(Height) 
+Height = input("enter your height in cm ")
+Height = int(Height) 
 
-#print(f"you are {Height / 100 } in meters ")
+print(f"you are {Height / 100 } in meters ")
 
 # Handling Multiple Inputs
 # You can handle multiple inputs by using the `split()` method.
 
-#numbers = input("Enter Three numbers separated by a space: ")
-#num1, num2, num3 = numbers.split()
-#num1 = int(num1)
-#num2 = int(num2)
-#num3 = int(num3)
-#print(f"The sum of the numbers is {num1 + num2 - num3}.")
+numbers = input("Enter Three numbers separated by a space: ")
+num1, num2, num3 = numbers.split()
+num1 = int(num1)
+num2 = int(num2)
+num3 = int(num3)
+print(f"The sum of the numbers is {num1 + num2 - num3}.")
 
 # In this code, the user enters two numbers, which are then split and converted to integers.
 
@@ -57,7 +57,7 @@ foods= input("name 3 foods you like with spaces ")
 
 food1, food2, food3 = foods.split()
 
-#print(food1) 
+print(food1) 
 print(food2)
 print(food3)
 

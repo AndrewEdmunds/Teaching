@@ -94,7 +94,7 @@ people = {
 #This can be useful because say you would like to get the information of a person from their name,
 #you would do so with the following print statement:
 
-print(people["Andrew"])
+#print(people["Andrew"])
 
 #That concludes the basics on dictionaries and how they work, now just like lists you can preform
 #different functions on dictionaries, we will now go over a few.
@@ -113,7 +113,7 @@ people.pop("Brady")
 
 #print(people)
 
-#as seen above, the pop functions exactly as it does on dictionaries as it does on lists, except you need to specify which
+#as seen above, the pop functions exactly as it does on dictionaries, except you need to specify which
 #entry you want to delete.
 
 #adding a new key and value

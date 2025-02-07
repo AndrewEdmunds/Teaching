@@ -110,7 +110,7 @@ if 10 < a < 20:
     elif a % 3 != 0:
         print ("a is between 10 and 20 but not a multiple of 3")
 else:
-    print (" a is not between 10 and 20")
+    print ("a is not between 10 and 20")
 
 
 
