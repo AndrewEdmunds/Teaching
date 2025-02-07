@@ -109,3 +109,12 @@ if 10 < x < 20:
 # Finally, can you create a nested if statement that includes an else block for both the outer and inner conditions?
 # This will help you handle all possible scenarios effectively.
 
+x = -3
+if  x > 0:
+    print("we have nothing")
+    if x > 3:
+        print("you have stuff")
+    else:
+        print("what have you done?")
+else:
+    print("League of Lillia")
