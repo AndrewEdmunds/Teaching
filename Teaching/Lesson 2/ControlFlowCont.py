@@ -27,25 +27,26 @@ for Characters in League_Characters:
 
 # While Loops
 # A `while` loop will continue to execute as long as its condition remains true.
-
+'''
 i = 1
 
 while i < 6:
     print(i)
     i += 1
-
+'''
 
 
 # This loop will print numbers 1 to 5. The loop will stop when `i` becomes 6.
 
 # Exercise:
 # Write a `while` loop to print numbers from 10 to 1:
+'''
+i = 10
 
-
-
-
-
-
+while i >= 1:
+    print(i)
+    i -= 1
+'''
 
 
 # Break and Continue
@@ -73,11 +74,12 @@ while i < 6:
 
 # Activity:
 # Write a `for` loop that prints numbers from 1 to 10, but skips any number divisible (x % y == 0) by 3:
-
-
-
-
-
+'''
+for i in range(1, 11):
+    if i % 3 == 0:
+        continue
+    print(i)
+'''
 
 
 # Challenge:
