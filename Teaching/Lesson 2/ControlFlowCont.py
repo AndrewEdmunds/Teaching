@@ -89,38 +89,28 @@ for i in range(1, 11):
 
 
 
-
-
 # Loop Control with Else
 # In Python, you can also have an `else` block with loops. The `else` part is executed when the loop finishes normally (not stopped by `break`).
-
-#for i in range(5):
-    #print(i)
-#else:
-    #print("Loop finished normally.")
-
+'''
+for i in range(5):
+    print(i)
+else:
+    print("Loop finished normally.")
+'''
 # Thought Experiment:
 # What do you think will happen if you add a `break` statement inside the loop?
 
 
 
-
-
-
-
 # Infinite Loops
 # Be cautious of infinite loops! They can crash your program if not handled correctly.
-
-#while True:
-    #print("This will run forever unless you stop it.")
-    #break  # comment this line to cause an infinite loop
-
+'''
+while True:
+    print("This will run forever unless you stop it.")
+    break  # comment this line to cause an infinite loop
+'''
 # Safety Tip:
 # Always make sure there's a way out of your loop.
-
-
-
-
 
 
 
@@ -132,12 +122,16 @@ for i in range(1, 11):
 # But for multiples of three, print "Fizz" instead of the number.
 # For multiples of five, print "Buzz".
 # For numbers which are multiples of both three and five, print "FizzBuzz":
-
-
-
-
-
-
+'''
+for i in range(1, 101):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:print(i)
+'''
 
 
 # And that's it for loops! Keep practicing, and you'll master loops in no time.
