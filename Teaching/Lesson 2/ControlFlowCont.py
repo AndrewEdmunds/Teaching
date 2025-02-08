@@ -21,7 +21,7 @@
 #champs =[ "poppy", "nasus", "xerath" ]
 
 #for champ in champs:
-   # print(champ)
+ #   print(champ)
 
 
 
@@ -42,11 +42,11 @@
 # Exercise:
 # Write a `while` loop to print numbers from 10 to 1:
 
-#i = 10
+i = 10
 
-#while i >= 1:
- #   print(i)
-  #  i -= 1
+while i > 0:
+    print(i)
+    i -= 1 
 
 
 
@@ -58,31 +58,29 @@
 # `continue` will skip the current iteration and continue with the next one.
 
 # Example with `break`:
-"""
-for i in range(1, 10):
-    if i == 5:
-        break
-    print(i)
-"""
+
+#for i in range(1, 10):
+   # if i == 5:
+    #    break
+   # print(i)
+
 # This will print numbers 1 to 4 and then stop.
 
 # Example with `continue`:
-'''
-for i in range(1, 10):
-    if i == 5:
-        continue
-    print(i)
-'''
+
+#for i in range(1, 10):
+    #if i == 5:
+    #    continue
+    #print(i)
+
 # This will print numbers 1 to 4 and 6 to 9, skipping 5.
 
 # Activity:
 # Write a `for` loop that prints numbers from 1 to 10, but skips any number divisible (x % y == 0) by 3:
-'''
-for Teegan in range (1, 11):
-    if Teegan % 3 == 0:
-        continue
-    print(Teegan)
-'''
+
+
+
+
 
 
 
@@ -97,12 +95,12 @@ for Teegan in range (1, 11):
 
 # Loop Control with Else
 # In Python, you can also have an `else` block with loops. The `else` part is executed when the loop finishes normally (not stopped by `break`).
-'''
-for i in range(5):
-    print(i)
-else:
-    print("Loop finished normally.")
-'''
+
+#for i in range(5):
+    #print(i)
+#else:
+    #print("Loop finished normally.")
+
 # Thought Experiment:
 # What do you think will happen if you add a `break` statement inside the loop?
 
@@ -114,11 +112,11 @@ else:
 
 # Infinite Loops
 # Be cautious of infinite loops! They can crash your program if not handled correctly.
-'''
-while True:
-    print("This will run forever unless you stop it.")
-    break  # comment this line to cause an infinite loop
-'''
+
+#while True:
+    #print("This will run forever unless you stop it.")
+    #break  # comment this line to cause an infinite loop
+
 # Safety Tip:
 # Always make sure there's a way out of your loop.
 
@@ -136,23 +134,6 @@ while True:
 # But for multiples of three, print "Fizz" instead of the number.
 # For multiples of five, print "Buzz".
 # For numbers which are multiples of both three and five, print "FizzBuzz":
-
-for p in range(1, 101):
-   
-    if p % 3 == 0 and p % 5 == 0:
-        print("fizzbuzz")
-    elif p % 3 == 0:
-        print('fizz')
-    elif p % 5 == 0:
-        print('buzz')    
-    else:
-        print(p)
-
-
-
-
-
-
 
 # And that's it for loops! Keep practicing, and you'll master loops in no time.
 

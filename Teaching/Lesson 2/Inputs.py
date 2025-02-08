@@ -14,10 +14,10 @@
 
 # Try it yourself!
 # Ask the user for their favorite "thing" is and print a message that includes their input:
-
+'''
 favourite_thing = input ("favourite food:")
 print(f"your favorite food is {favourite_thing}! ")
-
+'''
 
 
 # Converting Input
@@ -32,27 +32,27 @@ print(f"your favorite food is {favourite_thing}! ")
 # Exercise:
 # Ask the user for their height in centimeters and convert it to meters (you convert from centimeters to
 # meters by dividing by 100) and then print the result:
-
+'''
 Height = input("enter your height in cm ")
 Height = int(Height) 
 
 print(f"you are {Height / 100 } in meters ")
-
+'''
 # Handling Multiple Inputs
 # You can handle multiple inputs by using the `split()` method.
-
+'''
 numbers = input("Enter Three numbers separated by a space: ")
 num1, num2, num3 = numbers.split()
 num1 = int(num1)
 num2 = int(num2)
 num3 = int(num3)
 print(f"The sum of the numbers is {num1 + num2 - num3}.")
-
+'''
 # In this code, the user enters two numbers, which are then split and converted to integers.
 
 # Activity:
 # Ask the user for three favorite foods separated by commas. Print each food on a new line:
-
+'''
 foods= input("name 3 foods you like with spaces ") 
 
 food1, food2, food3 = foods.split()
@@ -60,33 +60,40 @@ food1, food2, food3 = foods.split()
 print(food1) 
 print(food2)
 print(food3)
-
+'''
 
 
 
 # Using Input in Loops
 # You can use the `input()` function inside loops to continually ask for user input.
-
+'''
 while True:
     command = input("Enter a command (or 'exit' to quit): ")
     if command == "exit":
         break
     print(f"You entered: {command}")
-
+'''
 # This loop will keep asking for a command until the user types "exit".
 
 # Challenge:
 # Write a loop that asks the user to enter numbers. If the user enters a negative number, exit the loop. Otherwise, print the square of the number:
-
-
-
+'''
+while True:
+    number = input("enter a number")
+    number = int(number)
+    if number < 0:
+        print("exit the loop")
+        break
+    else:
+        print(f"the sqaure root of number is {number**0.5}")
+'''
 
 
 
 
 # Validating Input
 # It's important to validate user input to ensure your program handles errors gracefully.
-
+'''
 while True:
     age = input("Enter your age: ")
     if age.isdigit():
@@ -95,14 +102,14 @@ while True:
         break
     else:
         print("Please enter a valid number.")
-
+'''
 # This loop will keep asking for age until a valid number is entered.
 
 # Exercise:
 # Ask the user to enter a valid email address (containing "@" and ".").
 # Keep asking until a valid email is entered:
 
-
+  
 
 
 

@@ -111,6 +111,7 @@ elif i % 2 != 0:
 
 
 # 2. Create a program that checks the user's age and prints whether they are a child, teenager, or adult:
+'''
 age = 16
 if age < 12:
     print("child")
@@ -118,7 +119,7 @@ elif 12 < age < 18:
     print("teenager")
 elif age > 18:
     print("adult") 
-
+'''
 
 
 
@@ -127,10 +128,16 @@ elif age > 18:
 # Input Statements
 # Basic Input:
 # 1. Ask the user for their favorite movie and print a message that includes their input.
+'''
+favourite_movie = input("whats your favourtie movie? ")
+print(favourite_movie +"is a great movie")
+'''
+
 # 2. Write a program that asks the user for their hometown and prints a greeting message:
-
-
-
+'''
+hometown = input("what is your hometown? ")
+print(hometown + " is a great place to live ")
+'''
 
 
 
