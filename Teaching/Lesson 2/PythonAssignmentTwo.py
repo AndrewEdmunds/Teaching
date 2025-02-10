@@ -5,10 +5,6 @@
 
 
 
-
-
-
-
 # While Loop:
 # 1. Write a while loop that prints numbers from 5 to 15.
 # 2. Create a while loop that prints "Hello, World!" 5 times:
@@ -16,24 +12,9 @@
 
 
 
-
-
-
-# Nested Loops:
-# 1. Write a nested loop to print a 5x5 grid of asterisks (*).
-# 2. Create a nested loop that prints the multiplication table from 1 to 5:
-
-
-
-
-
-
-
 # Break and Continue:
 # 1. Write a for loop that prints numbers from 1 to 20, but stops if the number is 13.
 # 2. Create a while loop that prints numbers from 1 to 10, but skips any number divisible by 4:
-
-
 
 
 
@@ -47,13 +28,8 @@
 
 
 
-
-
-
 # Elif Statements:
 # 1. Write a program that checks the temperature and prints whether it's "cold", "warm", or "hot":
-
-
 
 
 
@@ -64,13 +40,9 @@
 
 
 
-
-
-
 # Else Statements:
 # 1. Write a program that checks if a number is even or odd and prints the result.
 # 2. Create a program that checks the user's age and prints whether they are a child, teenager, or adult:
-
 
 
 
@@ -111,10 +83,3 @@
 # Validating Input:
 # 1. Write a program that asks for a username and ensures it contains only letters.
 # 2. Create a program that asks for a password and checks if it meets certain criteria (e.g., at least 8 characters long, contains a number):
-
-
-
-
-
-
-
