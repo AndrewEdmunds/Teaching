@@ -113,7 +113,7 @@ people.pop("Brady")
 
 #print(people)
 
-#as seen above, the pop functions exactly as it does on dictionaries as it does on lists, except you need to specify which
+#as seen above, the pop functions exactly as it does on dictionaries, except you need to specify which
 #entry you want to delete.
 
 #adding a new key and value
