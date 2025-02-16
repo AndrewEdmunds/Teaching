@@ -2,16 +2,9 @@
 # For Loop:
 # 1. Write a for loop that prints the numbers from 1 to 10.
 # 2. Create a list of your favorite fruits and use a for loop to print each fruit:
-'''
-for Numb in range(1, 11):
-    print(Numb)
-'''
 
-'''
-fruits = ["orange", "banana", "apple"]
-for fruit in fruits:
-    print(fruit)
-'''
+
+
 # While Loop:
 # 1. Write a while loop that prints numbers from 5 to 15.
 # 2. Create a while loop that prints "Hello, World!" 5 times:

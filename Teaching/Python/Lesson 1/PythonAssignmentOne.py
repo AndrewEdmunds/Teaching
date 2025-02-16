@@ -15,7 +15,8 @@ Irelia = 8
 
 
 
-# Question three: Please now use the variables you created to solve a math problem. (the math operators in python are
+
+# Question three: Please create two variable and solve a math problem with them. (the math operators in python are
 # addition: "+", subtraction: "-", multiplication: "*", and division: "/")
 
 print(Irelia*Lillia)
@@ -52,6 +53,7 @@ print(people["Teegan"])
 (people["Andrew"].update(favorite_color="blu"))
 print(people["Andrew"])
 
+#print(people["Andrew"])
 
 
 # Question seven: Write a Python script to create a list of numbers from 1 to 10. Remove the number 5 from the list, append the number 11 to the list, and then reverse the list.
@@ -87,4 +89,6 @@ Goofy_Bitches.pop("Brady")
 
 print(Goofy_Bitches)
 
+people.pop("Brady")
 
+#print(people)

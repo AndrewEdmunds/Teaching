@@ -7,7 +7,7 @@
 #While a variable such as an integer can only ever contain one element, for example "x = 1" can
 #only ever contain the value of 1, a list can contain multiple values. An example of this is as follows:
 
-FirstList = [1, "pineapple", 22, 34, "Fork"]
+FirstList = [1,"pineapple",22,34,"Fork"]
 
 #If you would like to see the entire list you can use the following line of code:
 
