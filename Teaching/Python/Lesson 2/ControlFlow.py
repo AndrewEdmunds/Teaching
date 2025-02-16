@@ -17,8 +17,10 @@ if x > 5:
 
 # Now, you try! Write your own if statement where the console will print something if x is less than 5:
 
+q=3
 
-
+if q < 5:
+    print("q is less then 5")
 
 
 
@@ -43,10 +45,11 @@ if x > 15:
 elif x > 5:
     # This block will execute if the previous condition (x > 15) was false, but this condition (x > 5) is true
     print("x is greater than 5 but less than or equal to 15")
-else:
+elif x < 5:
     # This block will execute if none of the above conditions were true
     print("x is 5 or less")
-
+else:
+    print ("dumbass") 
 # In this example, Python will first check if x is greater than 15.
 # If it is, it will print "x is greater than 15" and skip the rest of the checks.
 # If x is not greater than 15, it will move to the next condition and check if x is greater than 5.
@@ -55,11 +58,14 @@ else:
 
 # Try an elif and else statement for different conditions:
 
+leagueOfLegends = "not really fun" 
 
-
-
-
-
+if leagueOfLegends == "fun":
+    print("lets play")
+elif leagueOfLegends == "not fun":
+    print("dont get on")
+else:
+    print("fuck off")
 
 # Nested If Statements
 
@@ -80,16 +86,31 @@ if x > 5:
 # How can we modify this code to check if x is greater than 5 and also an even number?
 # Think about adding another nested if statement to check if x % 2 == 0 (this checks if x is even).
 
-
-
-
-
-
+b = 5
+if b > 5:
+    if b % 2 == 0:
+        print("b is greater then 5 and also a even number")
+    else:
+        print("not a even number but is greater then 5")
+elif b < 5:
+    if b % 2 != 0:
+        print("b is less then 5 but not a even number")
+    else:
+        print("b is less then 5 and is a even number")
+else:
+    print("b is equal to 5")
 
 # Can you write a nested if statement to check if a number is between 10 and 20 and also a multiple of 3?
 # Give it a try and see how you can expand the logic further.
 
-
+a = 7
+if 10 < a < 20:
+    if a % 3 == 0:
+        print("a is between 10 and 20 and is a multiple of 3")
+    elif a % 3 != 0:
+        print ("a is between 10 and 20 but not a multiple of 3")
+else:
+    print ("a is not between 10 and 20")
 
 
 
