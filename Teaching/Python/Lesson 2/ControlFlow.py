@@ -5,22 +5,23 @@
 # If Statements
 # If statements execute code when a condition is true.
 
-
+'''
 x=10
 
 if x > 5:
     print("x is greater than 5")
-
+'''
 #So with this block of code above, what do you think would happen if you ran it?
 
 #Furthermore, what do you think would happen if you gave a value of less than 5?
 
 # Now, you try! Write your own if statement where the console will print something if x is less than 5:
+'''
+x=3
 
-
-
-
-
+if x < 5:
+    print("Jayce Best Mid Laner")
+'''
 
 
 # Else and Elif Statements
@@ -34,7 +35,7 @@ if x > 5:
 # The else statement is used to execute a block of code if none of the previous conditions are true.
 
 # Let's break it down with an example:
-
+'''
 x = 10
 
 if x > 15:
@@ -46,7 +47,7 @@ elif x > 5:
 else:
     # This block will execute if none of the above conditions were true
     print("x is 5 or less")
-
+'''
 # In this example, Python will first check if x is greater than 15.
 # If it is, it will print "x is greater than 15" and skip the rest of the checks.
 # If x is not greater than 15, it will move to the next condition and check if x is greater than 5.
@@ -54,21 +55,27 @@ else:
 # If neither condition is true, the code inside the else block will run, printing "x is 5 or less".
 
 # Try an elif and else statement for different conditions:
+'''
+x=11
 
-
-
-
-
+if x > 10:
+    print("Top Gap")
+elif x == 6:
+    print("Mid Gap")
+else:
+    print("Bot Gap")
+'''
 
 
 # Nested If Statements
 
 # You can use if statements inside other if statements for more complex conditions.
+'''
 x = 10
 if x > 5:
     if x < 15:
         print("x is between 5 and 15")
-
+'''
 # Let's think about this block of code:
 # What happens if x is greater than 5?
 # What about if x is less than 5?
@@ -79,21 +86,22 @@ if x > 5:
 
 # How can we modify this code to check if x is greater than 5 and also an even number?
 # Think about adding another nested if statement to check if x % 2 == 0 (this checks if x is even).
-
-
-
-
-
+'''
+x = 10
+if x > 5:
+    if x % 2 == 0:
+        print("Greater than 5 and even number")
+'''
 
 
 # Can you write a nested if statement to check if a number is between 10 and 20 and also a multiple of 3?
 # Give it a try and see how you can expand the logic further.
-
-
-
-
-
-
+'''
+x = 18
+if 10 < x < 20:
+     if x % 3 == 0:
+        print("Less than 20, bigger than 10, and divisible by 3")
+'''
 
 
 # Let's also consider what will happen if x is set to 5.
@@ -101,3 +109,12 @@ if x > 5:
 # Finally, can you create a nested if statement that includes an else block for both the outer and inner conditions?
 # This will help you handle all possible scenarios effectively.
 
+x = -3
+if  x > 0:
+    print("we have nothing")
+    if x > 3:
+        print("you have stuff")
+    else:
+        print("what have you done?")
+else:
+    print("League of Lillia")
