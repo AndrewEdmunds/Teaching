@@ -1,24 +1,8 @@
-Library Book Rental System
+The Retard Car Rental Company rents cars for $35.00 a day and an aditional $0.10
+per km the renter traveled.
 
-Include comments, constants, and blank lines for readability.
+Allow the user to enter the customers name, phone number, number of days rented,
+km on the car at time of rent, km on car at time of return.
 
-Problem Statement:
-
-Create a program to calculate and display book rental information for a library. The program should:
-
-Allow the user to input the member’s name, phone number, number of books rented, and the rental start and end dates.
-
-The rental date will then determine the daily rental cost:
-
-If the user rented the book on a weekday, the cost is $2.00 a day
-If the user rented the book on a weekend, the cost is $5.00 a day
-
-There will also be late fees attached to the rental cost:
-
-if the user had the book(s) out for longer than a week, there will be an additional fee of $4.00 a day
-
-Lastly there will also be a tax of 15% on the total
-
-Calculate the total rental period in days, the cost of the rental, late fees (if applicable), and the total cost.
-
-Display all entered and calculated information in a formatted manner.
+At the end, have all the inputs displayed to the terminal plus the # of km traveled, the rental
+cost (which is the daily cost plus the distance cost), the tax (15%) and then finally the total

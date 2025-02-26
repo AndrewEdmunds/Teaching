@@ -146,17 +146,51 @@ print(hometown + " is a great place to live ")
 # 1. Ask the user for their birth year, convert it to an integer, and calculate their age.
 # 2. Create a program that asks the user for the length and width of a rectangle and calculates the area:
 
+'''
+#1
+Birth_year = input("Please Enter Your Birth Year Papi: ")
 
+Birth_year = int(Birth_year)
 
+current_year = 2025
 
+age = current_year - Birth_year
 
+print(f"You are {age} years old")
+'''
+'''
+#2
+length = int(input("Enter Rectangle Length: "))
 
+width = int(input("Enter Rectangle Width: "))
+
+area = width * length 
+
+print(f"the area of the rectangle is {area}")
+'''
 
 # Handling Multiple Inputs:
 # 1. Ask the user for two numbers separated by a comma, split the input, and print the sum of the numbers.
 # 2. Write a program that asks for three words separated by spaces and prints each word on a new line:
 
+1#
+'''
+numbers= input("Enter Two Numbers Seperated By A Comma: ")
 
+num1, num2 = numbers.split(",")
+
+sum_of_numbers = int(num1) + int(num2)
+
+print(f"the sum of the numbers is:", sum_of_numbers)
+'''
+2#
+'''
+words = input("Enter Three Words Seperated By Space: ")
+
+words = words.split()
+for words in words:
+    print(words)
+'''
 
 
 
@@ -165,3 +199,39 @@ print(hometown + " is a great place to live ")
 # Validating Input:
 # 1. Write a program that asks for a username and ensures it contains only letters.
 # 2. Create a program that asks for a password and checks if it meets certain criteria (e.g., at least 8 characters long, contains a number):
+
+1#
+'''
+username = input("Write A Username With Only Letters: ")
+
+username = username.isalpha()
+if username is True:
+    print("Username Only Has Letters: ")
+else:
+    print("Username Has Either Numbers Or Symbols: ")
+'''
+#2
+'''
+password = input(" Write A Password That Is At Least 8 Characters Long And Contains A Number")
+passwordAlphaCheck = password.isalpha()
+AllPossibleNumber = "0123456789"
+if any(char in AllPossibleNumber for char in password) is False and password.__len__() < 8:
+    print("Password Is Not Long Enough And Dont Contain Any Numbers, Can You Read?")
+elif any(char in AllPossibleNumber for char in password) is False:
+    print("Password Does Not Have Any Numbers But Is Long Enough, Please Learn To Read.")
+elif password.__len__() < 8:
+    print("Password Isnt Long Enough But Has Numbers ")
+else:
+    print("Password Is Valid, Good Job ")
+'''
+
+
+    
+
+
+
+
+
+
+
+

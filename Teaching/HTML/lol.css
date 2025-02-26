@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    display: inline-block;  /* Makes the list behave like a block but keeps centering */
+    text-align: left; /* Keeps text inside the list aligned properly */
+    list-style-position: inside; /* Moves bullets inside the list container */
+    padding: 0;
+}
