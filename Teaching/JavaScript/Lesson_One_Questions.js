@@ -9,9 +9,11 @@
 // C) echo "Hello, World!";
 // D) System.out.println("Hello, World!");
 
+//  B
+
 // ➡ Try it out: Write JavaScript code to print "JavaScript is fun!" to the console.
 
-
+console.log("JavaScript is fun!")
 
 // 2. Variables
 // Question: Which of the following is the correct way to declare a variable in JavaScript?
@@ -20,9 +22,12 @@
 // C) let x = 10;
 // D) const x = 10;
 
+//  B_C_D
+
 // ➡ Try it out: Declare a variable favoriteColor and set it to your favorite color. Print it to the console.
 
-
+var FavColor = "Blue"
+console.log(FavColor)
 
 // 3. Data Types
 // Question: What is the correct way to declare a boolean in JavaScript?
@@ -31,9 +36,12 @@
 // C) let isCool = true;
 // D) let isCool = YES;
 
+//  C
+
 // ➡ Try it out: Create a variable isStudent and set it to true. Print it to the console.
 
-
+var IsStudent = true
+console.log(IsStudent)
 
 // 4. Basic Operators
 // Question: What will be the output of the following JavaScript code?
@@ -47,9 +55,13 @@
 // C) 11
 // D) 0
 
+//  A
+
 // ➡ Try it out: Write JavaScript code that adds 25 and 7, then prints the result.
 
-
+y = 25
+z = 7
+console.log(y+z)
 
 // 5. If Statements
 // Question: What is wrong with this JavaScript if statement?
@@ -63,9 +75,14 @@
 // C) : should not be there.
 // D) All of the above.
 
+//  D
+
 // ➡ Try it out: Write an if statement that prints "x is even" if x is an even number.
 
-
+let x = 8
+if (x % 2 == 0){
+    console.log("x is even")
+}
 
 // Bonus Challenge
 // Write a JavaScript program that:
@@ -73,5 +90,15 @@
 // 2. Uses an if statement to check if age is greater than or equal to 18.
 // 3. If age is 18 or older, print "You are an adult."
 // 4. If age is less than 18, print "You are a minor."
+
+
+
+var Age = 20
+if (Age >= 18){
+    console.log("You are an adult.")
+}
+else{
+    console.log("You are a minor.")
+}
 
 
