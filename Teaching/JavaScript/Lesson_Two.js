@@ -17,6 +17,14 @@ sayHello();  // This will print "Hello, world!" to the console.
 
 // ➡ Try it out: Define a function named greet that prints "Welcome to JavaScript!" and call it.
 
+//function welcome() {
+ //   console.log("Welcome To Java Script");
+//}
+//welcome();
+
+
+
+
 
 // Parameters & Arguments
 // ----------------------
@@ -33,6 +41,17 @@ greet("Alice");
 greet("Bob");
 
 // ➡ Try it out: Modify the function so that it also prints "Have a great day!" after the greeting.
+ 
+function welcome(name) {
+    console.log("Welcome To JavaScript," + name);
+    console.log("Have A Great Day!");
+}
+welcome("Andrew");
+
+
+
+
+
 
 
 // Returning Values
@@ -50,6 +69,18 @@ console.log(sum);  // Prints 12
 
 // ➡ Try it out: Create a function called `multiply` that takes two numbers and returns their product.
 
+function multiply(num1, num2) {
+    return num1 * num2; 
+}
+let product = multiply(16, 4);
+console.log(product);
+//64
+
+
+
+
+
+
 
 // Loops: Repeating Code
 // ----------------------
@@ -65,6 +96,15 @@ for (let i = 1; i <= 5; i++) {
 
 // ➡ Try it out: Modify the loop to count from 1 to 10 instead.
 
+for (let a = 1; a <= 10; a++) {
+    console.log("iteration" + a);
+}
+
+
+
+
+
+
 
 // While Loop (like Python's `while` loop):
 // Runs as long as a condition is true.
@@ -76,6 +116,13 @@ while (count < 3) {
 }
 
 // ➡ Try it out: Modify the loop to count from 1 to 5.
+
+let b = 1;
+while(b <=5) {
+    console.log(b)
+    b++;
+}
+
 
 
 // Looping Through Arrays
@@ -91,10 +138,51 @@ for (let i = 0; i < fruits.length; i++) {
 
 // ➡ Try it out: Add another fruit to the array and loop through it again.
 
+fruits.push("potato");
+    for (let i = 0; i < fruits.length; i++) {
+console.log(fruits[i]);
+}
+ 
+
+
+
+
+
+
+
+
 
 // Final Challenge:
 // ----------------
 // 1. Write a function named `isEven` that takes a number as a parameter.
 // 2. It should return `true` if the number is even, otherwise return `false`.
 // 3. Use a loop to print all even numbers from 1 to 10 by calling your function.
+
+
+
+function isEven(number) {
+    if (number % 2 == 0) {
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+for (let number = 1; number <= 10 ; number++ ) {
+    if (isEven(number)) {
+        console.log(number);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 

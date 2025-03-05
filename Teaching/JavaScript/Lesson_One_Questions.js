@@ -9,6 +9,8 @@
 // C) echo "Hello, World!";
 // D) System.out.println("Hello, World!");
 
+// B
+
 // ➡ Try it out: Write JavaScript code to print "JavaScript is fun!" to the console.
 
 
@@ -19,6 +21,8 @@
 // B) var x = 10;
 // C) let x = 10;
 // D) const x = 10;
+
+// B C and D, B is most correct
 
 // ➡ Try it out: Declare a variable favoriteColor and set it to your favorite color. Print it to the console.
 
@@ -31,6 +35,7 @@
 // C) let isCool = true;
 // D) let isCool = YES;
 
+// C
 // ➡ Try it out: Create a variable isStudent and set it to true. Print it to the console.
 
 
@@ -62,6 +67,8 @@
 // B) x > 5 must be in parentheses ().
 // C) : should not be there.
 // D) All of the above.
+
+//D
 
 // ➡ Try it out: Write an if statement that prints "x is even" if x is an even number.
 

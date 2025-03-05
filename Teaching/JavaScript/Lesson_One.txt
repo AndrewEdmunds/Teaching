@@ -68,7 +68,7 @@ Example in JavaScript:
 let a = 10;
 let b = 3;
 console.log(a + b);  // 13
-console.log(a % b);  // 1
+console.log(a - b);  // 7
 
 Try performing basic math operations in JavaScript.
 
