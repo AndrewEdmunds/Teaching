@@ -1,6 +1,6 @@
-// ======================
-// JavaScript Lesson 1
-// ======================
+// =============================
+// JavaScript Lesson 1 Questions
+// =============================
 
 // 1. Printing to the Console
 // Question: What is the correct way to print "Hello, World!" in JavaScript?
