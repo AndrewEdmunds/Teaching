@@ -1,0 +1,179 @@
+======================================
+Javascript Dependant Elements In HTML
+======================================
+
+You guys have progressed quite far in JS already!
+
+Before moving on to more advanced topics in JS I think it
+is important for you to learn some of the HTML elements that
+essentially depend on JS to do what they are required to do.
+
+--------------------------------------
+Buttons
+--------------------------------------
+
+Take the simple button for example:
+
+<button>Click Me</button>
+
+On its own this button will appear on your html page, but as you can see,
+it has no functionality. What is the point of having a button that doesn't do
+anything?
+
+That is where JS comes in. If you instead were to do this:
+
+<button onclick="alert('Button clicked!')">Click Me</button>
+
+As you can see, the button actually does something!
+This button now creates a pop-up message when clicked by using JS.
+This is one of the MANY things you can do with JS in HTML.
+
+----------------------------
+Text Inputs and Displaying Data
+----------------------------
+
+Another common interactive element is an input field. Let’s say you wanted a user 
+to enter their name and display it somewhere on the page.
+
+If you just write:
+
+<input type="text">
+
+You’ll see an input field appear on the page, but it won’t actually do anything.
+We need JavaScript to make use of the input.
+
+Let’s modify it:
+
+<input type="text" id="nameInput" placeholder="Enter your name">
+<button onclick="displayText()">Submit</button>
+<p id="output"></p>
+
+<script>
+    function displayText() {
+        let name = document.getElementById("nameInput").value;
+        document.getElementById("output").innerText = "Hello, " + name + "!";
+    }
+</script>
+
+Now, when a user types in their name and clicks the button, their name will be 
+displayed on the page! JavaScript is responsible for grabbing the input value 
+and updating the page with it.
+
+----------------------------
+Dropdown Menus (Select)
+----------------------------
+
+A dropdown menu is another interactive element that relies on JavaScript. 
+
+If you just write:
+
+<select>
+    <option>Red</option>
+    <option>Blue</option>
+    <option>Green</option>
+</select>
+
+It creates a dropdown, but nothing happens when you pick an option.
+Let’s fix that:
+
+<label for="colors">Choose a color:</label>
+<select id="colors">
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+</select>
+<button onclick="getSelectedColor()">Submit</button>
+<p id="selectedColor"></p>
+
+<script>
+    function getSelectedColor() {
+        let color = document.getElementById("colors").value;
+        document.getElementById("selectedColor").innerText = "You chose: " + color;
+    }
+</script>
+
+Now, when you select a color and click submit, it will show which color you picked!
+
+----------------------------
+Forms and Submitting Data
+----------------------------
+
+Forms are an important part of web development. They allow users to input 
+data and submit it.
+
+A simple form might look like this:
+
+<form>
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+    <button type="submit">Submit</button>
+</form>
+
+But if you try clicking submit, nothing happens! 
+Let’s add JavaScript to handle the form submission:
+
+<form onsubmit="submitForm(event)">
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <button type="submit">Submit</button>
+</form>
+<p id="formMessage"></p>
+
+<script>
+    function submitForm(event) {
+        event.preventDefault(); // Prevents the page from reloading
+        let email = document.getElementById("email").value;
+        document.getElementById("formMessage").innerText = "Email submitted: " + email;
+    }
+</script>
+
+Now, when you enter an email and submit, JavaScript prevents the page from 
+reloading and displays the entered email instead.
+
+----------------------------
+Advanced HTML Elements
+----------------------------
+
+Now let’s look at some additional HTML elements that can be very useful!
+
+1. **Expandable Sections (`details` and `summary`)**
+    - These elements let you create a collapsible section of content.
+  
+      <details>
+          <summary>Click to expand</summary>
+          <p>This is some hidden content that becomes visible when clicked.</p>
+      </details>
+
+2. **Dialog Boxes (`dialog`)**
+    - The `<dialog>` element creates a pop-up dialog that you can control with JavaScript.
+
+      <dialog id="myDialog">
+          <p>This is a dialog box.</p>
+          <button onclick="document.getElementById('myDialog').close()">Close</button>
+      </dialog>
+      <button onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>
+
+3. **Progress Bars (`progress`)**
+    - You can show progress toward a goal using the `<progress>` element.
+
+      <progress value="50" max="100"></progress>
+
+4. **Meters (`meter`)**
+    - This is useful for displaying a value within a known range.
+
+      <meter value="75" min="0" max="100"></meter>
+
+----------------------------
+Final Challenge:
+----------------------------
+
+Now that we’ve covered these interactive elements, try this challenge:
+
+1. Create a simple form that has:
+    - A text input for the user's name.
+    - A dropdown for selecting a favorite color.
+    - A button that, when clicked, displays a message using both inputs.
+    
+   Example Output: `"Hello Andrew, your favorite color is Blue!"`
+
+Use what you’ve learned and see if you can make it work!  
