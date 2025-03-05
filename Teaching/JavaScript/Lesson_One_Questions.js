@@ -1,6 +1,6 @@
-// ======================
-// JavaScript Lesson 1
-// ======================
+// =============================
+// JavaScript Lesson 1 Questions
+// =============================
 
 // 1. Printing to the Console
 // Question: What is the correct way to print "Hello, World!" in JavaScript?
@@ -73,5 +73,4 @@
 // 2. Uses an if statement to check if age is greater than or equal to 18.
 // 3. If age is 18 or older, print "You are an adult."
 // 4. If age is less than 18, print "You are a minor."
-
 
