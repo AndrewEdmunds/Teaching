@@ -1,0 +1,198 @@
+1️⃣ How JavaScript and HTML Work Together
+When JavaScript is used in an HTML file, it allows you to modify elements, listen for user actions, and change what appears on the page.
+
+Ways to Use JavaScript in HTML
+Inline JavaScript (inside an HTML tag)
+
+
+
+
+<button onclick="alert('Hello!')">Click Me</button>
+Pros: Simple and easy
+Cons: Messy and harder to manage in larger projects
+JavaScript inside a <script> tag (recommended for small scripts)
+
+
+
+
+<script>
+    function sayHello() {
+        alert("Hello!");
+    }
+</script>
+<button onclick="sayHello()">Click Me</button>
+External JavaScript file (best for larger projects)
+
+
+
+
+<script src="script.js"></script>
+This keeps JavaScript separate from HTML, making code easier to manage.
+2️⃣ Selecting & Modifying HTML Elements
+JavaScript can change almost anything on a webpage, but first, you need to select the element you want to modify.
+
+Common Methods to Select Elements
+Method	What it Selects
+document.getElementById("myId")	Selects an element with a specific id
+document.querySelector(".myClass")	Selects the first element with a specific class
+document.querySelectorAll("p")	Selects all <p> elements as a list
+Modifying Text, HTML, and Attributes
+
+
+
+<p id="demo">Original text</p>
+<button onclick="changeText()">Change Text</button>
+
+<script>
+    function changeText() {
+        document.getElementById("demo").textContent = "Text changed!";
+    }
+</script>
+Property	What It Does
+.textContent	Changes only the text inside an element
+.innerHTML	Changes the entire HTML inside an element (can add new tags)
+.setAttribute("attribute", "value")	Changes an element’s attribute (like src, href, value)
+3️⃣ Event Listeners: Making the Page React
+Instead of adding onclick="..." in HTML, a better way is to use event listeners in JavaScript.
+
+
+
+
+<button id="myButton">Click Me</button>
+
+<script>
+    document.getElementById("myButton").addEventListener("click", function() {
+        alert("Button clicked!");
+    });
+</script>
+Event Type	What It Does
+"click"	Runs when the user clicks an element
+"mouseover"	Runs when the mouse hovers over an element
+"input"	Runs when the user types into an input field
+"submit"	Runs when a form is submitted
+Example: Changing Text When Input is Typed
+
+
+
+<input type="text" id="nameInput" placeholder="Type your name">
+<p id="greeting">Hello, ...</p>
+
+<script>
+    document.getElementById("nameInput").addEventListener("input", function() {
+        document.getElementById("greeting").textContent = "Hello, " + this.value;
+    });
+</script>
+As the user types in the input box, the text updates automatically!
+4️⃣ Changing Styles with JavaScript
+JavaScript can modify CSS styles dynamically.
+
+
+
+
+<p id="colorText">Click to change color</p>
+<button onclick="changeColor()">Change Color</button>
+
+<script>
+    function changeColor() {
+        document.getElementById("colorText").style.color = "blue";
+    }
+</script>
+Property	What It Does
+.style.color = "red"	Changes text color
+.style.backgroundColor = "yellow"	Changes background color
+.style.fontSize = "20px"	Changes font size
+5️⃣ Showing & Hiding Elements
+
+
+
+<p id="secretMessage" style="display: none;">Surprise!</p>
+<button onclick="toggleMessage()">Show/Hide</button>
+
+<script>
+    function toggleMessage() {
+        let message = document.getElementById("secretMessage");
+        if (message.style.display === "none") {
+            message.style.display = "block";
+        } else {
+            message.style.display = "none";
+        }
+    }
+</script>
+Clicking the button toggles the visibility of the text.
+6️⃣ Debugging JavaScript in HTML
+Sometimes, JavaScript doesn't work as expected. Here’s how to debug:
+
+✅ Use console.log() to check values
+
+js
+
+
+let userInput = document.getElementById("inputField").value;
+console.log(userInput); // See what the user typed
+✅ Check for typos in id names
+
+If document.getElementById("wrongId") is null, the id might be incorrect.
+✅ Use the Browser Console
+
+Right-click → Inspect → Console
+Look for red error messages to find mistakes.
+📝 Practice Exercises
+1️⃣ Fix the Errors
+Find the mistakes in this code and correct them:
+
+
+
+
+<p id="msg">Hello</p>
+<button onclick="change()">Click</button>
+
+<script>
+    function changeText() {
+        document.getElement("msg").textContent = "Hi!";
+    }
+</script>
+2️⃣ Make a Counter
+Create a simple counter with + and - buttons.
+
+Example:
+
+
+
+
+<p id="counter">0</p>
+<button onclick="increase()">+</button>
+<button onclick="decrease()">-</button>
+
+<script>
+    let count = 0;
+    
+    function increase() {
+        count++;
+        document.getElementById("counter").textContent = count;
+    }
+    
+    function decrease() {
+        count--;
+        document.getElementById("counter").textContent = count;
+    }
+</script>
+3️⃣ Create a Dark Mode Toggle
+Modify this button to switch between light and dark themes:
+
+
+
+
+<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+<style>
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+</style>
