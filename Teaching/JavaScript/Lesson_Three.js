@@ -21,6 +21,7 @@ Strings have built-in methods that allow us to manipulate text.
 
 let message = "  Hello, JavaScript!  ";
 
+
 // Convert to uppercase
 console.log(message.toUpperCase());
 
@@ -102,7 +103,7 @@ console.log(num.toFixed(2));
 console.log(num.toString());
 
 // Convert a string to a number
-let strNum = "42";
+let strNum = "3.14";
 console.log(parseInt(strNum));
 console.log(parseFloat("3.14"));
 
@@ -111,7 +112,7 @@ console.log(Math.max(10, 5, 8, 30));
 console.log(Math.min(10, 5, 8, 30));
 
 // Get a random number between 0 and 1
-console.log(Math.random());
+console.log(Math.random(1, 100));
 
 // Generate a random whole number between 1 and 10
 console.log(Math.floor(Math.random() * 10) + 1);

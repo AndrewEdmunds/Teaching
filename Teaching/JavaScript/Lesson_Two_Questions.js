@@ -93,9 +93,9 @@ while (count > 0) {
     console.log("Counting down: " + count);
     count--;
 }
-Counting down: 3
-Counting down: 2
-Counting down: 1
+//Counting down: 3
+//Counting down: 2
+//Counting down: 1
 
 
 
@@ -109,9 +109,9 @@ Counting down: 1
 //     Then, use a loop to print all even numbers from 1 to 10 using your function.
 
 function isEven(number) {
-    return number % 2 === 0;
+    return number % 2 == 0;
   }
-  for (let number= 1; number, <= 10; number++) {
+  for (let number= 1; number <= 10; number++) {
     if (isEven(number)) {
         console.log(number);
     }
